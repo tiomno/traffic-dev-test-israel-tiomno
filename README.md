@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Traffic Dev Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hello and welcome
 
-## Available Scripts
+This is a public repository with read-only access.
 
-In the project directory, you can run:
+To get set up, you will need to
 
-### `yarn start`
+1. [Create a free Bitbucket account](https://id.atlassian.com/signup)
+2. Fork this repository under your new account
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    ![Bitbucket Fork](fork.png "Bitbucket Fork")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Name the repository `traffic-dev-test-<your-name>` and leave it public
 
-### `yarn test`
+## Tools
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The only 2 requirements we have are:
 
-### `yarn build`
+- 	React (The role you are applying for involves a lot of projects based on React)
+- 	No UI Library (Bootstrap, Tailwind CSS, etc. We are keen to see how you solve the styling part yourself)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The rest of the test is unopinionated in regards to the build tools, libraries and packages you wish to use.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Your task
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   To complete the test you must implement a single web page based on the design at the following Figma link: [https://www.figma.com/file/R9K9hTVRy6XITEIfdG34ro](https://www.figma.com/file/R9K9hTVRy6XITEIfdG34ro). If you do not already have one, you will need to create a free Figma account, which you will be prompted to do when loading the link.
+-   You must implement both breakpoints depicted in the designs in a responsive manner.
+-	The slider must auto play, loop and have a fade effect
+-	The form must submit/post to an API of your choice. (For example: formspree.io, mailthis.to, etc).
+-   The design has an interactive form element, which can be built in any JavaScript library you feel comfortable with but must function in the following way:
 
-### `yarn eject`
+    -   If 1 or less checkboxes are selected, the submit button is disabled and an error is shown asking users to select 2 or more services (not depicted in the designs, and up to you how this should look)
+    -   If 2 or more checkboxes are selected, the submit button is enabled
+    -   If 6 or more checkboxes are selected, the submit button is disabled and an error is shown asking users to select 5 or fewer services
+    -   If the user refreshes the page, their selection should remain
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Browser Requirements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   Chrome (Latest)
+-   Firefox (Latest)
+-   Edge (Latest)
+-   Chrome Mobile (Latest)
+-   Mobile Safari (Latest)
 
-## Learn More
+### Links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Any links can just point to #.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Fonts
 
-### Code Splitting
+The fonts used in the design, are either a free Google Font or can be replaced by a similar free Google font of your choice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Submission
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email the link to your repository to [steven.mitchell@traffic.com.au](steven.mitchell@traffic.com.au), and include "Traffic Dev Test - your name" as the subject line.
