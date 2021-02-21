@@ -1,0 +1,52 @@
+@import '../../theme'
+
+.main
+  position: relative
+  width: 100%
+  
+  .slider
+    background-position: left
+    background-repeat: no-repeat
+    background-size: cover
+    height: calc(100vh - 93px)
+    -webkit-transition: background-image 1s ease
+    -moz-transition: background-image 1s ease
+    -o-transition: background-image 1s ease
+    transition: background-image 1s ease
+
+    @media (max-width: $layout-breakpoint-small)
+      height: calc(100vh - 50px)
+
+    .content
+      display: grid
+      grid-template-columns: 1fr 40%
+      justify-content: left
+      margin: 0 auto
+      padding-top: 20vh
+      width: 65vw
+
+      @media (max-width: $layout-breakpoint-large)
+        width: 80vw
+
+      @media (max-width: $layout-breakpoint-small)
+        padding-top: 8vh
+        width: 93vw
+
+      .message
+        color: white
+        font-family: 'Josefin Sans', sans-serif
+        font-size: 3.6vw
+        font-style: normal
+        font-weight: 900
+        text-align: left
+        letter-spacing: -1.09375px
+        line-height: 8rem
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+        text-transform: uppercase
+
+        @media (max-width: $layout-breakpoint-large)
+          line-height: 6rem
+
+        @media (max-width: $layout-breakpoint-small)
+          font-size: 3rem
+          line-height: 4rem

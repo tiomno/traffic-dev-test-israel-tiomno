@@ -1,0 +1,33 @@
+@import '../../../../theme'
+
+.controlWrap
+  margin-bottom: 1rem
+
+  .control
+    background: linear-gradient(0deg, rgba(187, 189, 183, 0.1), rgba(187, 189, 183, 0.1)), white
+    border: 0.5px solid $control-border-colour
+    border-radius: 4px
+    box-sizing: border-box
+    color: $text-colour
+    display: block
+    font-family: $text-font
+    font-size: $label-font-size
+    font-weight: 400
+    height: 56px
+    line-height: 2.16rem
+    padding: 15px
+    width: 100%
+
+    &::placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &:placeholder-shown
+      color: $text-colour
+      font-family: $text-font
+      font-size: $label-font-size
+      font-weight: 400
+      line-height: 2.16rem
+
+    &.error
+      background: linear-gradient(0deg, rgba(187, 189, 183, 0.1), rgba(187, 189, 183, 0.1)), #ffcccc

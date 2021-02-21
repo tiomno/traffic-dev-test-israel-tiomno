@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nunito+Sans:wght@400;700&family=Roboto&family=Roboto+Slab:wght@700&display=swap')
+@import 'theme'
+
+html,
+body,
+#root
+  font-family: 'Roboto', sans-serif
+  font-size: 12px
+  height: 100%
+  margin: 0
+
+//  Remove the outline on focus for all elements; this is not good for a11y, though.
+*:focus
+  outline: none
+
+a
+  color: $link-colour
+  text-decoration: none
+  
+.App
+  text-align: left
+
+.btn
+  border: none
+  font-family: 'Josefin Sans', sans-serif
+  font-weight: 900
+  letter-spacing: 2px
+  text-align: center
+  text-transform: uppercase
+  
+  &:not(:disabled):not(.disabled)
+    cursor: pointer
+
+.btn-primary
+  background-color: $primary-colour
+  color: black
+
+.btn-default
+  background-color: $default-colour
+  color: white
+  
+.btn-form
+  border-radius: 4px

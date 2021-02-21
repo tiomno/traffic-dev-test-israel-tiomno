@@ -1,0 +1,52 @@
+@import '../../../theme'
+
+.form
+  background-color: white
+  border-radius: 4px
+  margin-left: 25px
+  padding: 15px 45px
+  position: relative
+  
+  @media (max-width: $layout-breakpoint-small)
+    background-color: $mobile-bg-colour
+    box-sizing: border-box
+    left: 0
+    margin-left: 0
+    padding-left: 3.5vw
+    padding-right: 3.5vw
+    position: absolute
+    top: calc(100vh - 50px)
+    width: 100%
+
+  .header
+    color: #333333
+    font-family: 'Roboto Slab', sans-serif
+    font-style: normal
+    font-size: 2rem
+    font-weight: bold
+    line-height: 2.33rem
+    letter-spacing: 0.176471px
+
+  .warning
+    color: $warning-colour
+    font-size: 1.2rem
+    visibility: hidden
+
+    &.showWarning
+      visibility: visible
+
+  .buttonsGroup
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+    justify-content: center
+
+    .formButton
+      border-radius: 4px
+      box-sizing: border-box
+      flex: 1 1 40%
+      font-size: 1.2rem
+      padding: 15px
+
+      &:disabled
+        color: $disabled-colour
